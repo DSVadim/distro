@@ -1,8 +1,19 @@
-
 @mixin flex($fd,$js,$ai,$gp){
   display: flex;
   flex-direction: $fd;
   justify-content: $js;
   align-items: $ai;
   gap: $gp;
+}
+@mixin roboto($fs,$fw,$lh){
+  font-family: 'Roboto', sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+@mixin dmSans($fs,$fw,$lh){
+  font-family: 'DM Sans', sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
 }

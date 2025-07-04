@@ -1,0 +1,15 @@
+@use '../../scss/reset';
+@use '../../scss/mixin';
+@use '../../scss/vars';
+.header {
+  @include mixin.flex(row,space-around,center,5px);
+  &-wrapper{
+    @include mixin.flex(row,space-between,center,55px);
+  }
+  .logo{
+    @include mixin.flex(row,flex-start,center,5px);
+  }
+  &-search{
+    @include mixin.flex(row,flex-start,center,5px);
+  }
+}

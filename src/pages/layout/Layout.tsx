@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom"
-
+import Header from './../../components/header/Header.tsx'
 function Layout() {
     return (
-        <div>
-            <Link to="/SignIn"><a>Sign In</a></Link>
-        </div>
+        <>
+            <Header/>
+        </>
     )
 }
 

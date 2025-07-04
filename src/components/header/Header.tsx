@@ -4,6 +4,7 @@ import Logo2 from '../../assets/Layout/svg/logo2.svg'
 import Logo3 from '../../assets/Layout/svg/logo3.svg'
 import Search from '../../assets/Layout/svg/search.svg'
 import Nav from './nav/Nav.tsx'
+
 function Header() {
     return (
         <header className="header">

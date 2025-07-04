@@ -1,0 +1,56 @@
+@use '../../../scss/reset';
+@use '../../../scss/mixin';
+@use '../../../scss/vars';
+.section1{
+  @include mixin.flex(row,center,center,0);
+  &-container1{
+    width: 45%;
+    @include mixin.flex(column,center,flex-start,35px);
+    &-texts{
+      width: 70%;
+      @include mixin.flex(column,center,flex-start,15px);
+      &__subtitle{
+        @include mixin.dmSans(13.5px,400,24px);
+        color: vars.$no-active-color;
+      }
+      &__title{
+        @include mixin.dmSans(68.9px,500,84.5px);
+      }
+      &__description{
+        @include mixin.dmSans(13.5px,400,24px);
+        color: vars.$no-active-color;
+      }
+    }
+    &__btn{
+      color: vars.$background-color;
+      background: linear-gradient(to right bottom, #FF56BB, #FF8F77);
+      padding: 10px 25px;
+      border-radius: 10px;
+      @include mixin.dmSans(13.5px,400,24px);
+    }
+  }
+  &-container2{
+    &__img{
+      position: relative;
+    }
+    &-card{
+      position: absolute;
+      @include mixin.flex(row,center,center,5px);
+      top: 180px;
+      right: 700px;
+      background-color: vars.$background-color;
+      padding: 10px 35px;
+      border-radius: 16px;
+    }
+    .Ball{
+      position: absolute;
+      bottom:300px;
+      right: 680px;
+    }
+    .Ball1{
+      position: absolute;
+      top: 90px;
+      right: 200px;
+    }
+  }
+}

@@ -2,6 +2,7 @@
 @use '../../scss/mixin';
 @use '../../scss/vars';
 .header {
+  padding: 50px 0;
   @include mixin.flex(row,space-around,center,5px);
   &-wrapper{
     @include mixin.flex(row,space-between,center,55px);

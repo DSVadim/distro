@@ -1,0 +1,30 @@
+@use '../../../scss/reset';
+@use '../../../scss/mixin';
+@use '../../../scss/vars';
+
+.section4{
+@include mixin.flex(column,center,center,100px);
+  background-color: vars.$text-color;
+  padding: 100px 0;
+  &__title{
+    @include mixin.dmSans(40px,700,40px);
+    color: vars.$background-color;
+  }
+  &-container{
+    @include mixin.flex(row,center,center,150px);
+    &-card{
+      @include mixin.flex(column,center,center,10px);
+      &__name{
+        @include mixin.roboto(26px,500,34px);
+        color: vars.$background-color;
+      }
+      &-price{
+        @include mixin.flex(row,center,flex-start,10px);
+        &__text{
+          @include mixin.roboto(18px,500,26px);
+          color: vars.$background-color;
+        }
+      }
+    }
+  }
+}

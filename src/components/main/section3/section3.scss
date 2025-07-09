@@ -4,6 +4,7 @@
 
 .section3{
   @include mixin.flex(column,center,center,0);
+  padding-bottom: 150px;
   &__title{
     @include mixin.dmSans(40px,700,40px);
     padding: 100px 0;

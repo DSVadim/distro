@@ -1,0 +1,66 @@
+@use '../../../scss/reset';
+@use '../../../scss/mixin';
+@use '../../../scss/vars';
+
+.section3{
+  @include mixin.flex(column,center,center,0);
+  &__title{
+    @include mixin.dmSans(40px,700,40px);
+    padding: 100px 0;
+  }
+  .cards{
+    @include mixin.flex(row,space-around,center,100px);
+    &-card{
+      width: 36%;
+      @include mixin.flex(row,center,center,30px);
+      &-texts{
+        @include mixin.flex(column,center,flex-start,10px);
+        &-acount{
+          @include mixin.flex(row,flex-start,center,10px);
+          &__text{
+            @include mixin.roboto(15px,500,23px);
+          }
+        }
+        &__title{
+          @include mixin.roboto(32px,500,40px);
+        }
+        &__description{
+          @include mixin.roboto(12px,400,16px);
+          color: vars.$no-active-color;
+        }
+        &__text{
+          @include mixin.roboto(12px,500,16px);
+        }
+        &-block{
+          @include mixin.flex(row,center,center,40px);
+          &-prices{
+            &__bid{
+              @include mixin.roboto(12px,400,16px);
+              color: vars.$no-active-color;
+            }
+            &-price{
+              @include mixin.flex(row,center,center,0);
+              @include mixin.roboto(14px,500,22px);
+            }
+          }
+          &-times{
+            &__end{
+              @include mixin.roboto(12px,400,16px);
+              color: vars.$no-active-color;
+            }
+            &__time{
+              @include mixin.roboto(14px,500,22px);
+            }
+          }
+        }
+        &__btn{
+          color: vars.$background-color;
+          background: linear-gradient(to right bottom, #FF56BB, #FF8F77);
+          padding: 10px 48px;
+          border-radius: 10px;
+          @include mixin.dmSans(13.5px,400,24px);
+        }
+      }
+    }
+  }
+}

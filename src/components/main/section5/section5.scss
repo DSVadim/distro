@@ -1,0 +1,53 @@
+@use '../../../scss/reset';
+@use '../../../scss/mixin';
+@use '../../../scss/vars';
+
+.section5{
+    &__title{
+      padding: 100px 0 40px 35px;
+      @include mixin.dmSans(40px,700,40px);
+    }
+  &-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    &-card{
+      padding: 40px 35px;
+      &__text{
+        padding: 10px 0;
+        @include mixin.roboto(18px,600,26px);
+      }
+      &-block{
+        width: 65%;
+        @include mixin.flex(row,space-between,center,10px);
+        &-acount{
+          @include mixin.flex(row,flex-start,center,10px);
+          &__text{
+            @include mixin.roboto(15px,500,23px);
+          }
+        }
+        &-prices{
+          &__bid{
+            @include mixin.roboto(12px,400,16px);
+            color: vars.$no-active-color;
+          }
+          &-price{
+            @include mixin.flex(row,center,center,10px);
+            &__text{
+              @include mixin.roboto(15px,500,23px);
+            }
+          }
+        }
+      }
+    }
+  }
+  &__btn{
+    display: flex;
+    justify-self: center;
+    @include mixin.dmSans(15px,500,24px);
+    color: vars.$text-color;
+    background-color: transparent;
+    border: vars.$text-color solid 1px;
+    padding: 10px 25px;
+    border-radius: 20px;
+  }
+}

@@ -3,8 +3,11 @@
 @use '../../../scss/vars';
 
 .section5{
+  @include mixin.flex(column,center,center,0);
     &__title{
-      padding: 100px 0 40px 35px;
+      display: flex;
+      align-self: flex-start ;
+      padding: 100px 0 40px 305px;
       @include mixin.dmSans(40px,700,40px);
     }
   &-container{
@@ -17,7 +20,7 @@
         @include mixin.roboto(18px,600,26px);
       }
       &-block{
-        width: 65%;
+        width: 97%;
         @include mixin.flex(row,space-between,center,10px);
         &-acount{
           @include mixin.flex(row,flex-start,center,10px);

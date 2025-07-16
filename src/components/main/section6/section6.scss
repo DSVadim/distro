@@ -1,0 +1,45 @@
+@use '../../../scss/reset';
+@use '../../../scss/mixin';
+@use '../../../scss/vars';
+
+.section6{
+  @include mixin.flex(column,center,center,0);
+  width: 100%;
+  padding: 300px 0;
+  &-container{
+    @include mixin.flex(row,space-between,center,0);
+    width: 70%;
+    background-color: vars.$background-color2;
+    position: relative;
+    border-radius: 50px;
+    &__img{
+      position: absolute;
+      top:-80px;
+      left: -80px;
+    }
+    &-block1{
+      @include mixin.flex(column,center,flex-start,25px);
+      padding: 30px 70px;
+      width: 40%;
+      &__title{
+        @include mixin.dmSans(68px,700,84px);
+        color: vars.$background-color;
+      }
+      &__btn{
+        @include mixin.roboto(18px,500,26px);
+        color: vars.$background-color;
+        border: 1px solid vars.$background-color;
+        border-radius: 10px;
+        padding: 10px 25px;
+      }
+    }
+    &-block2{
+      &__img{
+        position: absolute;
+        top: -200px;
+        left: 800px;
+        z-index: 2;
+      }
+    }
+  }
+}

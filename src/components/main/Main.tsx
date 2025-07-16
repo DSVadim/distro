@@ -4,6 +4,7 @@ import Section2 from './section2/Section2.tsx'
 import Section3 from './section3/Section3.tsx'
 import Section4 from './section4/Section4.tsx'
 import Section5 from './section5/Section5.tsx'
+import Section6 from './section6/Section6.tsx'
 function Main() {
     return (
         <>
@@ -12,6 +13,7 @@ function Main() {
             <Section3/>
             <Section4/>
             <Section5/>
+            <Section6/>
         </>
     )
 }

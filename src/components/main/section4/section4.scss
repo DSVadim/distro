@@ -4,7 +4,7 @@
 
 .section4{
 @include mixin.flex(column,center,center,100px);
-  background-color: vars.$text-color;
+  background-color: vars.$background-color2;
   padding: 100px 0;
   &__title{
     @include mixin.dmSans(40px,700,40px);

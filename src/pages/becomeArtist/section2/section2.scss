@@ -1,0 +1,28 @@
+@use '../../../scss/vars';
+@use '../../../scss/mixin';
+@use '../../../scss/reset';
+.section2-becomeArtist{
+  padding: 200px 0;
+  @include mixin.flex(column,center,center,0);
+  &-container{
+    width: 70%;
+    @include mixin.flex(row,space-around,center,0);
+    &-texts{
+      @include mixin.flex(column,center,flex-start,20px);
+      width: 30%;
+      &__title{
+        @include mixin.dmSans(45px,700,55px);
+      }
+      &__description{
+        @include mixin.dmSans(18px,600,26px);
+      }
+      &__btn{
+        color: vars.$background-color;
+        background: linear-gradient(to right bottom, #6E56FF, #B073FF);
+        @include mixin.roboto(14px,500,22px);
+        padding: 10px 35px;
+        border-radius: 30px;
+      }
+    }
+  }
+}

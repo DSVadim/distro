@@ -1,7 +1,8 @@
 import './section5.scss'
 import Card from './card/Card.ts'
 import type { Cards } from './card/Card.ts'
-import Ethereum from "../../../assets/Layout/svg/ethereum.svg";
+import {Link} from "react-router-dom"
+import Ethereum from "../../../assets/Layout/svg/ethereum.svg"
 
 function Section5() {
     return (
@@ -28,7 +29,7 @@ function Section5() {
                     </div>
                 ))}
             </div>
-            <button className="section5__btn">Discover More</button>
+            <Link to={'/Discover'}><button className="section5__btn">Discover More</button></Link>
         </section>
     )
 }

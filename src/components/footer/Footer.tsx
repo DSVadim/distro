@@ -10,6 +10,7 @@ import Facebook from "../../assets/Layout/svg/facebook.svg";
 import Google from "../../assets/Layout/svg/google.svg";
 import Twitter from "../../assets/Layout/svg/twiter.svg"
 import Apple from "../../assets/Layout/svg/apple.svg"
+import {Link} from "react-router-dom";
 
 function Footer() {
     return (
@@ -39,7 +40,7 @@ function Footer() {
                         <ul className='footer-container1-block2-nav__list'>
                             <p className='footer-container1-block2-nav__title'>Cretor</p>
                             <li className='footer-container1-block2-nav__item'><a className='footer-container1-block2-nav__link'>FAQ</a></li>
-                            <li className='footer-container1-block2-nav__item'><a className='footer-container1-block2-nav__link'>Become Artist</a></li>
+                            <li className='footer-container1-block2-nav__item'><Link to={'/BecomeArtist'} className='footer-container1-block2-nav__link'>Become Artist</Link></li>
                         </ul>
                         <ul className='footer-container1-block2-nav__list'>
                             <p className='footer-container1-block2-nav__title'>Join our community</p>

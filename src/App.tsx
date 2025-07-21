@@ -1,6 +1,7 @@
 import './App.scss'
 import Layout from './pages/layout/Layout.tsx'
-import SignIn from './pages/signIn/SignIn.tsx'
+import Discover from "./pages/discover/Discover.tsx";
+import BecomeArtist from "./pages/becomeArtist/BecomeArtist.tsx";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <BrowserRouter basename='/distro/'>
         <Routes>
           <Route path="/" element={<Layout />} />
-            <Route path="/SignIn" element={<SignIn/>}/>
+            <Route path="/Discover" element={<Discover/>}/>
+            <Route path="/BecomeArtist" element={<BecomeArtist/>}/>
         </Routes>
       </BrowserRouter>
     </>

@@ -1,0 +1,12 @@
+@use '../../../scss/vars';
+@use '../../../scss/mixin';
+@use '../../../scss/reset';
+.section1-discover{
+  @include mixin.flex(column,center,center,25px);
+  &__title{
+    @include mixin.dmSans(69px,700,84px);
+  }
+  &-search{
+    @include mixin.flex(row,flex-start,center,5px);
+  }
+}

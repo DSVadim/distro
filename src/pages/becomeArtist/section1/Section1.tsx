@@ -5,6 +5,7 @@ import Ex1 from "../../../assets/BecomeArtist/png/ex1.png";
 import Ex2 from "../../../assets/BecomeArtist/png/ex2.png";
 import Ex3 from "../../../assets/BecomeArtist/png/ex3.png";
 import Ex4 from "../../../assets/BecomeArtist/png/ex4.png";
+import {Link} from "react-router-dom";
 
 function Section1() {
     return (
@@ -12,7 +13,7 @@ function Section1() {
             <div className='section1-becomeArtist-conatiner1'>
                 <h1 className='section1-becomeArtist-conatiner1__title'>Become an Artist</h1>
                 <p className='section1-becomeArtist-conatiner1__description'>Welcome to the world of NFTs, Creator! We're excited to see your unique digital assets come to life. Create, share, and let your imagination run wild.</p>
-                <button className='section1-becomeArtist-conatiner1__btn'>Upload</button>
+                <Link to={'/Upload'}><button className='section1-becomeArtist-conatiner1__btn'>Upload</button></Link>
             </div>
             <div className='section1-becomeArtist-container2'>
                 <div className='section1-becomeArtist-container2-card1'>

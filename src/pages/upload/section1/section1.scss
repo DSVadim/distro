@@ -1,0 +1,71 @@
+@use '../../../scss/vars';
+@use '../../../scss/mixin';
+@use '../../../scss/reset';
+.section1-upload{
+  padding: 100px 0;
+  @include mixin.flex(column,center,center,50px);
+  &__title{
+    @include mixin.dmSans(58.5px,700,72px)
+  }
+  &-container{
+    @include mixin.flex(row,space-around,center,450px);
+  }
+  .section1-container-form{
+   @include mixin.flex(column,center,flex-start,20px);
+    &__title{
+      @include mixin.dmSans(18px,700,26px);
+    }
+    &__description{
+      @include mixin.roboto(15px,400,23px);
+      color: vars.$no-active-color;
+    }
+    &__inputname{
+      padding: 10px 100px 10px 10px;
+    }
+    &__input{
+      padding: 10px 100px 100px 10px;
+    }
+    &__btn{
+      color: vars.$background-color;
+      @include mixin.roboto(18px, 600, 26px);
+      background: linear-gradient(to right bottom, #FF56BB, #FF8F77);
+      padding: 10px 150px;
+      border-radius: 10px;
+    }
+  }
+  .section1-block{
+    &__title{
+      display: flex;
+      justify-self: center;
+      @include mixin.dmSans(18px,700,26px);
+    }
+    &-card {
+      &-names {
+        @include mixin.flex(row, space-between, center, 0);
+        &__text {
+          padding: 10px 0;
+          @include mixin.roboto(30px, 700, 44px);
+        }
+        &__bid {
+          @include mixin.roboto(20px, 500, 27px);
+          color: vars.$no-active-color;
+        }
+      }
+      &-texts {
+        @include mixin.flex(row, space-between, center, 0);
+        &-acount {
+          @include mixin.flex(row, flex-start, center, 10px);
+          &__text {
+            @include mixin.roboto(25px, 600, 39px);
+          }
+        }
+          &-price {
+            @include mixin.flex(row, center, center, 0);
+            &__text {
+              @include mixin.roboto(25px, 600, 39px);
+            }
+          }
+      }
+    }
+  }
+}

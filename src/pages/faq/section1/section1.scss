@@ -1,0 +1,23 @@
+@use '../../../scss/vars';
+@use '../../../scss/mixin';
+@use '../../../scss/reset';
+
+.section1-faq{
+  @include mixin.flex(column,center,center,25px);
+  padding: 100px 0 50px 0;
+  &__title{
+    @include mixin.dmSans(14px,500,24px);
+    color: vars.$no-active-color;
+  }
+  &__subtitle{
+    @include mixin.roboto(51px,600,78px);
+  }
+  &__description{
+    @include mixin.dmSans(18px,500,26px);
+  }
+  &-search{
+    @include mixin.flex(row,flex-start,center,5px);
+  }
+}
+
+

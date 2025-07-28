@@ -15,7 +15,7 @@ function Nav() {
                     </NavLink>
                 </li>
                 <li className="nav__item">
-                    <NavLink to="/" className={({ isActive }) => (isActive ? 'nav__active-link' : 'nav__link')}>
+                    <NavLink to="/Faq" className={({ isActive }) => (isActive ? 'nav__active-link' : 'nav__link')}>
                         FAQ
                     </NavLink>
                 </li>

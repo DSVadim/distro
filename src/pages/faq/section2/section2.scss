@@ -1,0 +1,35 @@
+@use '../../../scss/vars';
+@use '../../../scss/mixin';
+@use '../../../scss/reset';
+
+.section2-faq{
+  padding:0 0 100px 0;
+  @include mixin.flex(column,center,center,25px);
+  &__list{
+    @include mixin.flex(row,flex-start,center,45px);
+  }
+  &__link{
+    @include mixin.roboto(18px,400,26px);
+    color: vars.$no-active-color;
+  }
+  &-container{
+    @include mixin.flex(row,space-around,center,0);
+    &-block1{
+      width: 50%;
+      @include mixin.flex(column,center,center,20px);
+      &-wrap{
+        @include mixin.flex(column,center,flex-start,10px);
+        width: 90%;
+        &__text{
+          @include mixin.dmSans(18px,600,26px);
+        }
+        &__invisibletext{
+          @include mixin.dmSans(18px,500,26px);
+        }
+      }
+    }
+    &-block2{
+      @include mixin.flex(column,center,flex-start,45px);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use '../../../scss/vars';
+@use '../../../scss/mixin';
+@use '../../../scss/reset';
+
+.section2-about{
+  @include mixin.flex(column,center,center,0);
+  &-container1{
+    @include mixin.flex(row,center,center,55px);
+    &-texts{
+      @include mixin.flex(column,center,flex-start,20px);
+      width: 35%;
+      &__title{
+        @include mixin.roboto(58.5px,700,72px);
+      }
+      &__description{
+        @include mixin.dmSans(18px,500,26px);
+      }
+    }
+  }
+  &-container2{
+    @include mixin.flex(row,center,center,250px);
+    &-card{
+      @include mixin.flex(column,center,center,5px);
+      &__number{
+        @include mixin.dmSans(25.6px,600,39.3px);
+      }
+      &__text{
+        @include mixin.dmSans(18px,500,26px);
+      }
+    }
+  }
+}

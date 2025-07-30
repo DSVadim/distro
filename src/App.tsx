@@ -4,6 +4,7 @@ import Discover from "./pages/discover/Discover.tsx";
 import BecomeArtist from "./pages/becomeArtist/BecomeArtist.tsx";
 import Upload from "./pages/upload/Upload.tsx";
 import Faq from "./pages/faq/Faq.tsx";
+import About from "./pages/about/About.tsx";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/BecomeArtist" element={<BecomeArtist/>}/>
             <Route path="/Upload" element={<Upload/>}/>
             <Route path="/Faq" element={<Faq/>}/>
+            <Route path="/About" element={<About/>}/>
         </Routes>
       </BrowserRouter>
     </>

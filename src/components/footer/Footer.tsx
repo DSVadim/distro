@@ -35,7 +35,7 @@ function Footer() {
                         <ul className='footer-container1-block2-nav__list'>
                             <p className='footer-container1-block2-nav__title'>Company</p>
                             <li className='footer-container1-block2-nav__item'><a className='footer-container1-block2-nav__link'>Explore</a></li>
-                            <li className='footer-container1-block2-nav__item'><a className='footer-container1-block2-nav__link'>About</a></li>
+                            <li className='footer-container1-block2-nav__item'><Link to={'/About'} className='footer-container1-block2-nav__link'>About</Link></li>
                         </ul>
                         <ul className='footer-container1-block2-nav__list'>
                             <p className='footer-container1-block2-nav__title'>Cretor</p>

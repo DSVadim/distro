@@ -1,0 +1,45 @@
+@use '../../../scss/vars';
+@use '../../../scss/mixin';
+@use '../../../scss/reset';
+
+.section1-about{
+  @include mixin.flex(column,center,center,0);
+  &-container{
+    @include mixin.flex(row,center,center,55px);
+    &-texts{
+      @include mixin.flex(column,center,flex-start,20px);
+      width: 35%;
+      &__title{
+        @include mixin.dmSans(13.5px,500,24px);
+        color: vars.$no-active-color;
+      }
+      &__subtitle{
+        @include mixin.roboto(58.5px,700,72px);
+      }
+      &__description{
+        @include mixin.dmSans(18px,500,26px);
+      }
+     }
+    &-imgs{
+      &__back1{
+        position: relative;
+      }
+      &__paint{
+        position: absolute;
+        top: 325px;
+        right: 675px;
+        z-index: 1;
+      }
+      &__music{
+        position: absolute;
+        top: 12.5px;
+        right: 550px;
+        z-index: 1;
+      }
+      &__play{
+        position: absolute;
+        right: 225px;
+      }
+    }
+   }
+}

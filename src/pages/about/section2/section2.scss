@@ -4,6 +4,7 @@
 
 .section2-about{
   @include mixin.flex(column,center,center,0);
+  padding: 100px 0;
   &-container1{
     @include mixin.flex(row,center,center,55px);
     &-texts{

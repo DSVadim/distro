@@ -1,6 +1,8 @@
 import Header from './../../components/header/Header.tsx'
 import Section1 from './section1/Section1.tsx'
 import Section2 from './section2/Section2.tsx'
+import Section3 from './section3/Section3.tsx'
+import Section4 from './section4/Section4.tsx'
 import Footer from "../../components/footer/Footer.tsx"
 function About() {
     return (
@@ -8,6 +10,8 @@ function About() {
             <Header/>
             <Section1/>
             <Section2/>
+            <Section3/>
+            <Section4/>
             <Footer/>
         </>
     )

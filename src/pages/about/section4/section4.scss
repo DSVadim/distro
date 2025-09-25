@@ -1,0 +1,17 @@
+@use '../../../scss/vars';
+@use '../../../scss/mixin';
+@use '../../../scss/reset';
+
+.section4-about{
+  @include mixin.flex(column,center,center,0);
+  padding: 100px 0;
+  &__title{
+    @include mixin.dmSans(58px,600,72px);
+    padding: 50px 0;
+  }
+  &-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+}

@@ -1,0 +1,18 @@
+@use '../../../scss/vars';
+@use '../../../scss/mixin';
+@use '../../../scss/reset';
+
+.section3-about{
+  @include mixin.flex(column,center,center,0);
+  background-color: vars.$text-color;
+  position: relative;
+  &__title{
+    @include mixin.dmSans(58px,600,72px);
+    color: vars.$background-color;
+    padding: 0 0 550px 0;
+  }
+  &__img{
+    top:150px;
+    position: absolute;
+  }
+}

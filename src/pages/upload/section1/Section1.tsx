@@ -14,7 +14,8 @@ function Section1() {
                     <p className='section1-container-form__description'>File types supported: JPG, PNG, GIF, SVG, MP4,</p>
                     <label className='section1-container-form__label'>
                         <img src={Upload} alt='upload'/>
-                        <input className='section1-container-form__label-file' type="file" id="file" name="file" placeholder="Upload or drag here"/>
+                        <p className={'section1-container-form__label-text'}>Upload or drag here</p>
+                        <input className='section1-container-form__label-file' type="file" id="file" name="file" accept={'image/*'}/>
                     </label>
                     <p className='section1-container-form__title'>Name NFT</p>
                     <input className='section1-container-form__inputname' type='text' placeholder='Name NFT'/>

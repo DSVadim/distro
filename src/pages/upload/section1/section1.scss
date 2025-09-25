@@ -19,11 +19,25 @@
       @include mixin.roboto(15px,400,23px);
       color: vars.$no-active-color;
     }
+    &__label{
+      @include mixin.flex(column,center,center,5px);
+      padding: 50px 190px;
+      background: vars.$description-color;
+      &-file{
+        display: none;
+      }
+      &-text{
+        @include mixin.dmSans(12px,500,16px);
+        color: vars.$no-active-color;
+      }
+    }
     &__inputname{
-      padding: 10px 100px 10px 10px;
+      padding: 10px 290px 10px 10px;
+      background: vars.$description-color;
     }
     &__input{
-      padding: 10px 100px 100px 10px;
+      padding: 10px 290px 100px 10px;
+      background: vars.$description-color;
     }
     &__btn{
       color: vars.$background-color;

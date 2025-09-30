@@ -1,20 +1,20 @@
-import Exbot1 from '../../../../assets/Layout/png/exbot1.png'
-import Acount1 from '../../../../assets/Layout/svg/acount1.svg'
-import Art2 from '../../../../assets/Layout/png/art2.png'
-import Acount3 from '../../../../assets/Layout/svg/acount3.svg'
-import Art3 from '../../../../assets/Layout/png/art3.png'
-import Acount4 from '../../../../assets/Layout/svg/acount4.svg'
-import Art4 from '../../../../assets/Layout/png/art4.png'
-import Acount5 from '../../../../assets/Layout/svg/acount5.svg'
-import Art5 from '../../../../assets/Layout/png/art5.png'
-import Art6 from '../../../../assets/Layout/png/art6.png'
-import Acount2 from '../../../../assets/Layout/svg/acount2.svg'
-import Art7 from '../../../../assets/Layout/png/art7.png'
-import Art8 from '../../../../assets/Layout/png/art8.png'
-import Art9 from '../../../../assets/Layout/png/art9.png'
-import Art10 from '../../../../assets/Layout/png/art10.png'
-import Art11 from '../../../../assets/Layout/png/art11.png'
-import Art12 from '../../../../assets/Layout/png/art12.png'
+import Exbot1 from '../assets/Layout/png/exbot1.png'
+import Acount1 from '../assets/Layout/svg/acount1.svg'
+import Art2 from '../assets/Layout/png/art2.png'
+import Acount3 from '../assets/Layout/svg/acount3.svg'
+import Art3 from '../assets/Layout/png/art3.png'
+import Acount4 from '../assets/Layout/svg/acount4.svg'
+import Art4 from '../assets/Layout/png/Art4.png'
+import Acount5 from '../assets/Layout/svg/acount5.svg'
+import Art5 from '../assets/Layout/png/art5.png'
+import Art6 from '../assets/Layout/png/art6.png'
+import Acount2 from '../assets/Layout/svg/acount2.svg'
+import Art7 from '../assets/Layout/png/art7.png'
+import Art8 from '../assets/Layout/png/art8.png'
+import Art9 from '../assets/Layout/png/art9.png'
+import Art10 from '../assets/Layout/png/art10.png'
+import Art11 from '../assets/Layout/png/art11.png'
+import Art12 from '../assets/Layout/png/art12.png'
 
  export interface  Cards {
     id: number;
@@ -23,7 +23,7 @@ import Art12 from '../../../../assets/Layout/png/art12.png'
     account: string;
     name: string;
 }
-const Card: Cards[] = [
+const CardData: Cards[] = [
     {
         id:1,
         title: 'ExBoot #1',
@@ -112,4 +112,4 @@ const Card: Cards[] = [
         name: 'Richard '
     },
 ]
-export default Card
+export default CardData

@@ -20,7 +20,7 @@ function App() {
             <Route path="/Upload" element={<Upload/>}/>
             <Route path="/Faq" element={<Faq/>}/>
             <Route path="/About" element={<About/>}/>
-            <Route path="/Detail" element={<Detail/>}/>
+            <Route path="/detail/:id" element={<Detail/>} />
         </Routes>
       </BrowserRouter>
     </>

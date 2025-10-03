@@ -10,8 +10,8 @@ function Section5() {
             <h1 className='section5__title'>Explore</h1>
             <div className='section5-container'>
                 {CardData.map((card: Cards) => (
-                    <Link to={'/Detail'}>
-                        <div key={card.id} className="section5-container-card">
+                    <Link key={card.id} to={`/detail/${card.id}`}>
+                        <div className="section5-container-card">
                             <img src={card.img} alt={card.title}/>
                             <p className="section5-container-card__text">{card.title}</p>
                             <div className='section5-container-card-block'>
